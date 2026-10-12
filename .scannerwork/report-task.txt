@@ -2,5 +2,5 @@ projectKey=sonar-scan-learning
 serverUrl=http://localhost:9000
 serverVersion=26.9.0.129388
 dashboardUrl=http://localhost:9000/dashboard?id=sonar-scan-learning
-ceTaskId=8ec7565f-956b-4106-9e72-fabcc010d423
-ceTaskUrl=http://localhost:9000/api/ce/task?id=8ec7565f-956b-4106-9e72-fabcc010d423
+ceTaskId=366ea477-a6c6-438c-9942-f6ac7d2b6082
+ceTaskUrl=http://localhost:9000/api/ce/task?id=366ea477-a6c6-438c-9942-f6ac7d2b6082
