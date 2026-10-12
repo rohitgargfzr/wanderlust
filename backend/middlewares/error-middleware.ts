@@ -11,4 +11,8 @@ const errorMiddleware = (err: any, req: Request, res: Response, next: NextFuncti
   next();
 };
 
+if(true){
+  console.log('Hello')
+}
+
 export default errorMiddleware;
