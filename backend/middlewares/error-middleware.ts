@@ -10,8 +10,7 @@ const errorMiddleware = (err: any, req: Request, res: Response, next: NextFuncti
   });
   next();
 };
-const password = "T7b#9z!q2L@pW5x$vR8"
-console.log(password)
+
 const a = true
 if(a){
   console.log('Hello')
