@@ -55,6 +55,11 @@ passport.use(
 passport.serializeUser((user: any, done) => {
   done(null, user._id);
 });
+ 
+const a = true
+const b = false
+
+const value = a? 'hello': b? 'b is false': 'a is true'
 
 passport.deserializeUser(async (id: string, done) => {
   try {
