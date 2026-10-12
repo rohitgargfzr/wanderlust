@@ -8,7 +8,7 @@ pipeline{
     }
     stage('SonarQube Analysis'){
       steps {
-        withSonarQubeEnv('Sonar-server'){
+        withSonarQubeEnv('sonar-server'){
           sh '''
           npx sonarqube-scanner \
             -Dsonar.exclusions=node_modules/**,dist/** \
