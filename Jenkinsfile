@@ -26,4 +26,12 @@ pipeline{
                 }
             }
   }
-}}
+}post {
+        failure {
+            // Send Slack message
+            slackSend(color: 'danger', message: "🚨 Pipeline Failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]\nView logs: ${env.BUILD_URL}")
+        }
+        success {
+          slackSend(color: 'success', message: "🚨 Pipeline Failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]\nView logs: ${env.BUILD_URL}")
+        }
+    }}
